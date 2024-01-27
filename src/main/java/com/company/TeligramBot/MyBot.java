@@ -30,7 +30,7 @@ public class MyBot extends TelegramLongPollingBot {
                 Runnable runnable = () -> {
                     SendAudio audio1 = new SendAudio();
                     audio1.setCaption(oneTitle.trim() + ":" + twoTitle.trim());
-                    audio1.setChatId(message.getChatId());
+                    audio1.setChatId("@mp3_li");
                     audio1.setAudio(new InputFile(fileId));
 
                     try {
